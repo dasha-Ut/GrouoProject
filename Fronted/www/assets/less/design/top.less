@@ -1,0 +1,70 @@
+
+
+#top{
+  background-color: rgba(11, 11, 11, 0.83);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  padding-left: 114px;
+  right: 0;
+  height: @NavigationHeight;
+  min-width: @CartWidth;
+
+
+
+}
+
+
+.top_panelLine{
+  height: @NavigationHeight /2;
+  margin-top: 3.3px;
+  margin-right: 20px;
+
+  border-bottom: solid 1px rgba(251, 251, 251, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  .phone{
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: sub;
+    color: rgba(249, 249, 249, 0.6);
+  }
+
+  .worktime{
+    vertical-align: sub;
+    display: inline-block;
+    font-size: 11px;
+    margin-left: 22px;
+  }@media (max-width: 767px) {
+  .worktime {
+    display: none;
+  }
+}
+
+}
+
+
+
+
+.enter{
+  float: right;
+  padding: 2px 9px 2px 9px;
+}
+
+@media (max-width: 991px) {
+  .freedeliver {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .pizza {
+    display: none;
+  }
+}
+
+
+
+
+
+
