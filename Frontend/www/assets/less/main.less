@@ -1,0 +1,146 @@
+@mainColor: #f6782f;
+@FlagLeft: 20px;
+@FlagWidth: 70px;
+@CartWidth: 300px;
+@NavigationHeight: 60px;
+@CartHeightBut: 105px;
+@RowHeight: 115px;
+
+@import "design/top";
+@import "design/create";
+
+
+body {
+  margin-top: 50px;
+  position: center;
+
+
+}
+
+
+
+.centre {
+  position: absolute;
+  margin-left: 35%;
+  top: @NavigationHeight;
+  margin-top: 100px;
+  margin-right: 20px;
+  padding-top: 100px;
+  text-align: center;
+  height: 500px;
+  width: 500px;
+
+  .sq-btn {
+    display: inline-block;
+    position: relative;
+    min-width: 178px;
+    margin: 6px 28px;
+    padding: 15px 40px;
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0010ff;
+    transition: .15s ease-out;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  .btn-two{
+    color: #ff8464;
+  }
+  .btn-one {
+    color: #ff9585;
+  }
+  .sq-btn:last-of-type {
+    margin: 6px 28px;
+  }
+  .sq-btn:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: calc(100% + 12px);
+    width: 100%;
+    border: 2px solid #0010ff;
+    box-sizing: border-box;
+    transition: .2s ease-in-out;
+  }
+  .btn-one:before {
+    border: 2px solid #fbfdff;
+  }
+  .btn-two:before {
+    border: 2px solid #fbfdff;
+  }
+
+  .sq-btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    height: 100%;
+    width: calc(100% + 16px);
+    border: 1px solid #0010ff;
+    box-sizing: border-box;
+    transition: .2s ease-in-out;
+  }
+  .btn-one:after {
+    border: 1px solid #fbfdff;
+  }
+  .btn-two:after {
+    border: 1px solid #fbfdff;
+  }
+  .sq-btn:hover:before {
+    top: 0;
+    left: -8px;
+    height: 100%;
+    width: calc(100% + 16px);
+  }
+  .sq-btn:hover:after {
+    top: -6px;
+    left: 0;
+    height: calc(100% + 12px);
+    width: 100%;
+  }
+}
+
+//.twoButtons{
+//  font-size: large;
+//  top:@NavigationHeight;
+//  margin-bottom: 50px;
+//  margin-top: 80px;
+//  left: 40%;
+//  width:500px;
+//  height: 500px;
+//  font-size: large;
+//  text-align: center;
+//}
+//.btn {
+//  display: inline-block;
+//  padding: 6px 12px;
+//  margin-bottom: 0;
+//  font-size: 14px;
+//  font-weight: 400;
+//  line-height: 1.42857143;
+//  text-align: center;
+//  white-space: nowrap;
+//  vertical-align: middle;
+//  touch-action: manipulation;
+//  cursor: pointer;
+//  user-select: none;
+//  background-image: none;
+//  border: 1px solid transparent;
+//  border-radius: 4px;
+//
+//}
+//.btn1{
+//  background-color: rgb(106, 74, 248);
+//  background-image: linear-gradient(to bottom, #912dd5 0, #8329c1 100%);
+//  background-repeat: repeat-x;
+//}
+//
+//.btn2{
+//  background-color: rgb(143, 138, 248);
+//  background-image: linear-gradient(to bottom, #4e49d9 0, #6a4af8 100%);
+//  background-repeat: repeat-x;
+
